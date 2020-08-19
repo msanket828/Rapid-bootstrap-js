@@ -81,7 +81,11 @@ header {
     right:1%;
     bottom: 1%;
     z-index: 343333;
-  }  
+  }
+    
+  .hide-top {
+    display: none;
+  }
 
   /* about-us  */
 

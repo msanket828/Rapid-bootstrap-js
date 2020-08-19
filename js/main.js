@@ -119,6 +119,10 @@ goTop.addEventListener('click',function() {
   });
 })
 
+window.addEventListener('scroll', function () {
+  (window.scrollY > window.innerHeight / 2) ? goTop.classList.remove('hide-top') : goTop.classList.add('hide-top');
+})
+
 
 //for faq accordian
 var accTabs=document.querySelectorAll('.acc-tab'),
@@ -193,3 +197,5 @@ navLink.forEach(function(fun){
     fun.classList.add('active');
   })
 })
+
+
