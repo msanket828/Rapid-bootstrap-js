@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --Color: #413e66;
+  --font-fam: 'Montserrat', sans-serif;
+  --secondary: #1bb1dc;
+  --comPadding: 70px 0;
+  --h3font-size: 35px;
+  --footerparaSize: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row { margin: 0;}
+
+li { list-style: none;}
+
+.navbar-brand {
+  font-family: var(--font-fam);
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.nav-link { 
+  color: var(--Color);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family:var(--font-fam) ;
+}
+
+.nav-link:hover {
+  color: #1bb1dc !important;
+}
+
+h2.display-4 {
+  font-size: 45px;
+}
+
+.topbar li {
+  list-style: none; 
+  display: inline-block;
+}
+
+.social-links {
+  margin: 5px 10px;
+  font-size: 15px;
+  color: var(--Color);
+}
+
+header {
+  background: url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 10%; 
+  height: 100vh;
+}
+
+.banner { 
+  padding: 50px 0;
+  height: auto;
+}
+
+.business { 
+  color: var(--secondary);
+}
+
+#getstarted {
+  background: var(--secondary);
+}
+
+/*==================================
+   main sectin starts 
+  ==================================*/
+
+  /* top arrow */
+  .pos-fix {  
+    background: #1bb1dc;
+    position: fixed;
+    right:1%;
+    bottom: 1%;
+    z-index: 343333;
+  }  
+
+  /* about-us  */
+
+  .aboutus{
+    padding: var(--comPadding);
+  }
+
+  .imageBox {    
+    border: 10px solid #ddd;
+    overflow: hidden;
+  }
+
+  .about-img {   
+    position: relative;
+    transition: .4s ease-in-out;   
+  }
+
+
+  .about-img:hover {
+    transform: scale(1.051);
+  }
+
+  .aboutus h3 { 
+    font-size: var(--h3font-size);
+    color: var(--Color);
+  }
+
+  .about-italic {
+    font-size: 27px;
+  }
+
+
+/* services */
+  .services {
+    padding: var(--comPadding);
+  }
+
+  .services h3 { 
+    font-size: var(--h3font-size);
+    color: var(--Color);    
+  }
+
+  .service-detail {
+    padding: 50px 20px 20px 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 20px 5px rgba(15, 1, 1, 0.1);
+    transition: all .4s ease-in-out;
+  }
+
+  .service-detail:hover {
+    transform: scale(1.05);  
+  }
+
+  .service-icon {
+    background: #e77fa4;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  
+  }
+
+  .service-icon i {
+    color: #fff;  
+  }
+
+  .services h4 {
+    font-weight: bold;
+    color: var(--Color);
+    text-align: center;
+    padding: 10px 0 5px 0;
+  }
+
+  /* why choose us */
+  .why-us {
+    padding: var(--comPadding);
+  }
+  
+  .why-us-title h3 {
+    color: var(--Color);
+    font-size: var(--h3font-size);
+  }
+
+  .why-us-icon {
+    float: left;    
+    font-size: 30px;    
+  }
+
+  .why-us-icon i:first-child {  color: #f058dc; }  
+
+  .why-us h4 {
+    margin: 0 0 0px 6%;
+  }
+
+  .why-us ul {
+    padding: 0;
+  }
+
+  .why-us li>p {
+    margin: 0 0 0 50px;
+  }
+
+  .why-us h4 {
+    color: var(--Color);
+  }
+
+  /* counters */
+  
+  .counter {
+    padding: var(--comPadding);
+  }
+
+  .count {
+    font-size: 55px;
+    color: var(--Color);
+  }
+
+  .count-detail {
+    color: var(--Color);
+  }
+
+  /* call to action */
+  .call-to-action {
+    background: #2d2b46;
+  }
+
+  /* posts */
+  .posts {
+    padding: var(--comPadding);
+  }
+
+  /*============================================= portfolio================================= */
+  .portfolio {
+    padding: var(--comPadding);
+  }
+
+  .portfolio h3 {
+    color: var(--Color);
+    font-size: var(--h3font-size);
+  }
+
+  .tab-link {
+    text-transform: capitalize;
+    color: var(--Color);
+    font-size: var(--footerparaSize);
+    transition: all .2s ease;    
+  }
+
+  .portfolio-before {
+    position: relative;
+  }
+
+  .portfolio-before:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 10px solid #000;   
+    
+  }
+
+  /* ===========================================testimonial======================================= */
+  .testimonial {
+    padding: var(--comPadding);
+  }
+
+  .testimonial-slider {
+    width: 80%;
+  }
+
+  .testimonial h3 {
+    font-size: var(--h3font-size);
+    color: var(--Color);
+  }
+  .owners {
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+  }
+
+  .owners-detail h4 {
+    font-size: 20px;
+  }
+
+  .owners-detail p {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  /* ============================================Team============================================ */
+  .team {
+    padding: var(--comPadding);
+  }
+  
+  .team-detail h3 {
+    font-size: var(--h3font-size);
+    color: var(--Color);
+  }
+
+  .team-member-detail {
+    position: relative;    
+  }
+
+  .team-member-info {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 75%;  
+    background: rgba(0, 0, 0, 0.5);  
+    transition: all .2s ease;    
+  }
+
+  .team-member-detail:hover .team-member-info {
+    top: 60%;  
+    height: 40%;  
+  }
+
+  .social-icons {
+    padding: 0;
+    margin: 0 auto;
+    width: 38%;
+  }
+  .social-icons i { 
+    color: #fff;
+    font-size: 20px;
+    transition: all .2s ease;
+  }
+
+  .social-icons i:hover {
+    color: #1bb1dc;
+  }
+  
+
+  /* =============================================Our Clients========================================== */
+  .our-clients {
+    padding: var(--comPadding);  
+  }
+
+  .our-clients h3 {
+    font-size: var(--h3font-size);
+    color: var(--Color);
+  }
+
+  .clients {
+    opacity: .5;
+    transition: .3s ease;
+    max-width: 80%;
+  }
+
+  .clients:hover {
+    opacity: 1;
+  }
+
+  /* ========================================Pricing==================================================== */
+  .pricing {
+    padding: var(--comPadding);
+  }
+
+  .pricing-detail h3{
+    color: var(--Color);
+    font-size: var(--h3font-size);
+  }
+
+  .choose-plan {    
+    position: relative;
+    padding: 40px 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    transition: all .5s ease;
+  }
+
+  .choose-plan:hover {
+    transform: scale(1.0009);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);    
+  }
+
+  .choose-plan:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 5px;
+    background: #1bb1dc;
+    transition: all .4s ease;
+  }
+
+  .choose-plan:hover:before {
+    width: 100%;    
+  }
+
+  .choose-plan span {
+    display: block;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .choose-plan p {
+    font-size: 50px;
+    color: #413e66;
+  }
+
+  .choose-plan .plan-detail {
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+
+  p sup {
+    font-size: 30px;
+  }
+
+  p sub {
+    font-size: 16px;
+  }
+  .choose-plan span:nth-child(6){
+   margin-bottom: 20px; 
+  }
+    
+  .choose-plan a {
+    text-transform: uppercase;
+    background: var(--secondary);
+    border: none;
+  }
+
+  /* =================================faq section============================================= */
+  .faq {
+    padding: var(--comPadding);
+  }
+
+  .faq ul {
+    padding: 0;
+  }
+
+  .faq-detail h3{
+    font-size: var(--h3font-size);
+    color: var(--Color);
+  }
+
+  .faq li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0
+  }
+
+  .faq .acc-tab {
+    font-size: 22px;
+    color: var(--Color);
+    text-decoration: none;
+  }
+  
+  /*======================================Footer=========================================== */
+  /* .footer */
+  .footer {
+    padding: var(--comPadding); 
+    font-size: var(--footerparaSize);   
+  }
+
+  .footer p {
+    font-size: inherit;    
+    line-height: 22px;
+  }
+
+  .footer .navbar-brand, .footer h5 {
+    color: var(--Color);
+  }
+
+  .footer input[type='submit'] {
+    background: #1bb1dc;
+    border: none;
+  }
+
+  .useful-links ul {
+    padding: 0;    
+  }
+
+  .useful-links a {
+    color: var(--Color);
+  }
+
+  .contact-social-link {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .contact-social-link a {
+    background: #1bb1dc;
+    padding: 3px 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .contact-us  address{
+    margin:0;
+  }
+
+  .contact-us .phone,.contact-us .email {
+    font-weight: bold;
+  }
+
+  .copyrights {
+    padding: 40px 0 20px 0;
+    color: var(--Color);
+  }
+
+  .copyrights h5 ,.copyright h6{
+    font-size: var(--footerparaSize);
+  }
+
+  h6 .btn-color {
+    color: #1bb1dc;
+  }
+
+
+  /* ===============slick slider part css=================== */
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
+
+  /*=============Filter tab css (need for js)============================ */
+  .hideme {
+    display: none;
+  }
+
+  .tab-link.active {
+    color: #1bb1dc;
+  }
+
+  /* ===========accordian tab css (need for js)========================== */
+  .acc-tab.active {
+    color: #1bb1dc;
+  }
+
+  .acc-content {
+    transition: height 2s ease;
+  }
+
+  .hideme{
+    display: none;
+  }
+
+  /* ====================media queries starts her============================= */
+  @media only screen and (max-width: 1200px) {
+    .team-member-info {
+      top: 72%;      
+      height: 28%;
+    }
+    .team-member-detail:hover .team-member-info {
+      top: 55%;
+      height: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .team-member-info {
+      top: 80%;      
+      height: 20%;
+    }
+    .team-member-detail:hover .team-member-info {
+      top: 65%;
+      height: 35%;
+    }
+    .pricing .col-sm-8 {
+      margin: 10px 0;
+    }    
+    
+  }
+
+  @media only screen and (max-width:767px) {
+    header {
+      height: auto;
+    }
+    .imageBox {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+    .aboutus h3 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .team-member-info {
+      height: 25%;
+      top: 75%;      
+    }
+    .team-member-detail:hover .team-member-info {
+      top: 60%;
+      height: 40%;
+    }
+    .banner-text {
+      text-align: center;
+      margin: 0 auto 20px auto;
+    }
+    .btn-div {
+      margin: 0 auto;
+    }
+    .portfolio ul {
+      width: 50% !important;
+      padding: 0;
+    }
+    .contact-social-link {
+      width: 30%;
+    }
+    article .col-md-6 {
+      margin: 10px 0;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .banner-row div:last-child {
+      max-width: 80%;
+    }
+    .banner-row h2 {
+      font-size: 36px;
+    }
+    .contents img {
+      width: 50%;      
+    }
+    .portfolio {
+      text-align: center;
+    }
+    .team-member-info {
+      height: 20%;
+      top: 80%;
+    }
+    .aboutus div:last-child {
+      padding: 0 5%;
+    }
+    .w-50 {
+      width: 88%!important;
+    }
+    .service-detail {
+      margin: 20px 30px;
+    }
+    .posts article {
+      text-align: center;
+    }
+    .team-member-detail {
+      max-width: 60%;
+    }
+    .team .row {
+      text-align: -webkit-center;
+    }    
+    .pricing-card {
+      width: 70%;
+    }
+    .footer .row {
+      text-align: center;
+    }
+    .subscribe, .myform input,.myform textarea{
+      width: 60%;
+      margin: 0 auto
+    }
+    .contact-social-link {
+      margin: 0 auto
+    }   
+  
+    .faq .acc-tab {
+      font-size: 17px;      
+    }
+  }
