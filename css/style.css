@@ -80,7 +80,12 @@ header {
     position: fixed;
     right:1%;
     bottom: 1%;
-    z-index: 343333;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500000;
   }
     
   .hide-top {
@@ -467,7 +472,8 @@ header {
   }
 
   .contact-social-link {
-    width: 60%;
+    width: 96%;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -555,7 +561,13 @@ header {
     .pricing .col-sm-8 {
       margin: 10px 0;
     }    
-    
+    .testimonial-slider .col-lg-10 {
+      flex-direction: column;
+      text-align: center;
+    }
+    .contact-social-link {
+      width: 96%;
+    }
   }
 
   @media only screen and (max-width:767px) {
@@ -590,7 +602,7 @@ header {
       padding: 0;
     }
     .contact-social-link {
-      width: 30%;
+      width: 44%;
     }
     article .col-md-6 {
       margin: 10px 0;
@@ -605,7 +617,7 @@ header {
       font-size: 36px;
     }
     .contents img {
-      width: 50%;      
+      width: 65%;      
     }
     .portfolio {
       text-align: center;
@@ -633,16 +645,17 @@ header {
       text-align: -webkit-center;
     }    
     .pricing-card {
-      width: 70%;
+      width: 85%;
     }
     .footer .row {
       text-align: center;
     }
     .subscribe, .myform input,.myform textarea{
-      width: 60%;
+      width: 85%;
       margin: 0 auto
     }
     .contact-social-link {
+      width: 60%;
       margin: 0 auto
     }   
   
